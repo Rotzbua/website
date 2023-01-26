@@ -69,7 +69,7 @@
           <div v-if="isCompleteGame">
             <match-detail-hero-row
               v-for="(player, index) in scoresOfWinners"
-              v-bind:key="index"
+              :key="index"
               :heroes-of-winner="
                 !!scoresOfWinners[index] ? scoresOfWinners[index].heroes : []
               "

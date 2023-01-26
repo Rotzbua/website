@@ -29,7 +29,7 @@
 
     <v-card
       v-for="(crypto, index) in cryptos"
-      v-bind:key="crypto.coin"
+      :key="crypto.coin"
       class="support-subcard"
       tile
       outlined
@@ -47,7 +47,7 @@
     <!-- Alipay -->
     <v-card
       v-for="(name, index) in alternates"
-      v-bind:key="index"
+      :key="index"
       class="support-subcard"
       tile
       outlined

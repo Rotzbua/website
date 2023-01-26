@@ -6,7 +6,7 @@
     mobile-breakpoint="400"
   >
     <template v-for="h in headers" v-slot:[`header.${h.value}`]="{ header }">
-      <v-tooltip top v-bind:key="h.text">
+      <v-tooltip top :key="h.text">
         <template v-slot:activator="{ on }">
           <span v-on="on">{{ header.text }}</span>
         </template>

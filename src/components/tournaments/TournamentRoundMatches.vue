@@ -1,9 +1,9 @@
 <template>
-  <div class="bracket-rounds-column" v-bind:style="style">
-    <div class="round-name" v-bind:style="roundNameStyle">
+  <div class="bracket-rounds-column" :style="style">
+    <div class="round-name" :style="roundNameStyle">
       {{ round.name }}
     </div>
-    <div v-bind:style="matchesStyle">
+    <div :style="matchesStyle">
       <template v-for="(s, index) in series">
         <tournament-series
           :series="s"
@@ -11,7 +11,7 @@
           :playerHeight="playerHeight"
           :verticalSpace="verticalSpace"
           :roundWidth="roundWidth"
-          v-bind:key="s.id"
+          :key="s.id"
         />
       </template>
     </div>

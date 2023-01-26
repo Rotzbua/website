@@ -7,7 +7,7 @@
             <td
               v-for="header in headers"
               :key="header.text"
-              v-bind:style="{
+              :style="{
                 width: header.width,
                 'min-width': header.minWidth,
                 'text-align': header.align,

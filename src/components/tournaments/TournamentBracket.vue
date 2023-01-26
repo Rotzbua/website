@@ -1,7 +1,7 @@
 <template>
   <div v-if="showBracket" class="black--text">
     <h3 class="mt-3">Bracket</h3>
-    <div class="d-flex pa-2" v-bind:style="style">
+    <div class="d-flex pa-2" :style="style">
       <template v-for="(round, roundIndex) in rounds">
         <tournament-round-matches
           :key="`matches-${roundIndex}`"

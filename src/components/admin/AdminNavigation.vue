@@ -28,7 +28,7 @@
           :key="index"
           v-if="item.items && item.items.length > 0"
           :value="false"
-          v-bind:prepend-icon="item.icon"
+          :prepend-icon="item.icon"
           no-action
         >
           <template v-slot:activator>

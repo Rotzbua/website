@@ -2,8 +2,8 @@
   <div v-if="team">
     <div
       v-for="(player, index) in team.players"
-      v-bind:key="index"
-      v-bind:class="{ mt2: index > 0 }"
+      :key="index"
+      :class="{ mt2: index > 0 }"
     >
       <player-match-info
         :unfinishedMatch="unfinishedMatch"

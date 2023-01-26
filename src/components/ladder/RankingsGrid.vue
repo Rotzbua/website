@@ -5,10 +5,10 @@
         <tr>
           <td
             class="header"
-            v-bind:class="{ clickable: header.sortFunction !== undefined }"
+            :class="{ clickable: header.sortFunction !== undefined }"
             v-for="header in headers"
             :key="header.text"
-            v-bind:style="{
+            :style="{
               width: header.width,
               'min-width': header.minWidth,
             }"
@@ -35,7 +35,7 @@
           <td class="d-md-flex">
             <div
               class="rank-icon-container my-1"
-              v-bind:class="{ 'ml-md-3': index > 0 }"
+              :class="{ 'ml-md-3': index > 0 }"
               v-for="(playerId, index) in item.player.playerIds"
               :key="playerId.battleTag + '_' + item.race"
             >

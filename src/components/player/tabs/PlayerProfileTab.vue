@@ -36,7 +36,7 @@
                 :items="selectedRaceStats"
               >
                 <template v-slot:item.race="{ item }">
-                  <span><race-icon v-bind:race="item.race" /></span>
+                  <span><race-icon :race="item.race" /></span>
                 </template>
                 <template v-slot:item.wins="{ item }">
                   <span class="number-text">

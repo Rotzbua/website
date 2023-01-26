@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-col cols="5" md="12">
-        <v-tooltip top v-bind:disabled="!avatarDescription">
+        <v-tooltip top :disabled="!avatarDescription">
           <template v-slot:activator="{ on }">
             <v-card-text
               v-on="on"
@@ -120,7 +120,7 @@
                 <v-card-text
                   v-on="on"
                   class="player-avatar-choosing"
-                  v-bind:class="{ pointer: isLoggedInPlayer }"
+                  :class="{ pointer: isLoggedInPlayer }"
                   @click="
                     isLoggedInPlayer
                       ? savePicture(specialAvatarCategory, specialPicture.pictureId, specialPicture.description)

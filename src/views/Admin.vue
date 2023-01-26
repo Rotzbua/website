@@ -6,7 +6,7 @@
         <v-card-title>
           {{ selectedNavItem.title }}
         </v-card-title>
-        <component v-bind:is="selectedNavItem.component"></component>
+        <component :is="selectedNavItem.component"></component>
       </v-card>
     </div>
   </v-container>

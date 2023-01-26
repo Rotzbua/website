@@ -45,7 +45,7 @@
             Map Pool
           </div>
           <v-row class="mt-0 mb-0">
-            <v-col cols="4" class="py-0" v-for="map in mapOptions" v-bind:key="map.id">
+            <v-col cols="4" class="py-0" v-for="map in mapOptions" :key="map.id">
               <v-checkbox
                 :multiple="true"
                 v-model="mapPool"

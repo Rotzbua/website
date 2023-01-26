@@ -30,7 +30,7 @@
             class="header"
             v-for="header in headers"
             :key="header.text"
-            v-bind:style="{
+            :style="{
               width: header.width,
               'min-width': header.minWidth,
             }"
@@ -49,7 +49,7 @@
           <td>
             <div
               class="d-inline-block rank-icon-container"
-              v-bind:class="{ 'ml-3': index > 0 }"
+              :class="{ 'ml-3': index > 0 }"
               v-for="(playerId, index) in item.player.playerIds"
               :key="playerId.battleTag + '_' + item.race"
             >
