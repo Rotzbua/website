@@ -73,7 +73,7 @@
                 <team-match-info
                   :not-clickable="true"
                   :team="getPlayerTeam(ongoingMatch)"
-                  :unfinishedMatch="true"
+                  :unfinished-match="true"
                   left="true"
                 ></team-match-info>
               </div>
@@ -82,7 +82,7 @@
                 <team-match-info
                   :not-clickable="false"
                   :team="getOpponentTeam(ongoingMatch)"
-                  :unfinishedMatch="true"
+                  :unfinished-match="true"
                   right="true"
                 ></team-match-info>
               </div>

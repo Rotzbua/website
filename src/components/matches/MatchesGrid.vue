@@ -29,7 +29,7 @@
                     <team-match-info
                       :not-clickable="!unfinished"
                       :team="getPlayerTeam(item)"
-                      :unfinishedMatch="unfinished"
+                      :unfinished-match="unfinished"
                       :is-anonymous="true"
                     ></team-match-info>
                   </v-col>
@@ -39,7 +39,7 @@
                     <team-match-info
                       :not-clickable="!unfinished"
                       :team="team"
-                      :unfinishedMatch="unfinished"
+                      :unfinished-match="unfinished"
                       :is-anonymous="true"
                     ></team-match-info>
                   </v-col>
@@ -50,7 +50,7 @@
                   <team-match-info
                     :not-clickable="!unfinished"
                     :team="alwaysLeftName ? getPlayerTeam(item) : getWinner(item)"
-                    :unfinishedMatch="unfinished"
+                    :unfinished-match="unfinished"
                     left="true"
                   ></team-match-info>
                 </v-col>
@@ -62,7 +62,7 @@
                   <team-match-info
                     :not-clickable="!unfinished"
                     :team="alwaysLeftName ? getOpponentTeam(item) : getLoser(item)"
-                    :unfinishedMatch="unfinished"
+                    :unfinished-match="unfinished"
                   ></team-match-info>
                 </v-col>
               </v-row>
@@ -80,7 +80,7 @@
               <span class="number-text">{{ getDuration(item) }}</span>
             </td>
             <td v-if="showReplayDownload(item)">
-              <download-replay-icon :gameId="item.id"></download-replay-icon>
+              <download-replay-icon :game-id="item.id"></download-replay-icon>
             </td>
           </tr>
           <tr v-if="!matches || matches.length == 0">

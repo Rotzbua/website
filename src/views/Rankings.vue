@@ -7,7 +7,7 @@
           v-if="isGatewayNeeded()"
         />
         <game-mode-select
-          :gameMode="selectedGameMode"
+          :game-mode="selectedGameMode"
           @gameModeChanged="onGameModeChanged"
         ></game-mode-select>
         <v-menu offset-x>
@@ -142,8 +142,8 @@
       <v-card-text>
         <rankings-grid
           :rankings="rankings"
-          :ongoingMatches="ongoingMatchesMap"
-          :selectedRank="searchModel"
+          :ongoing-matches="ongoingMatchesMap"
+          :selected-rank="searchModel"
         ></rankings-grid>
         <v-row v-if="showRaceDistribution">
           <v-col cols="12">

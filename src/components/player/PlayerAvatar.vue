@@ -36,7 +36,7 @@
         </v-tooltip>
       </v-col>
     </v-row>
-    <player-socials :userProfile="userProfile" />
+    <player-socials :user-profile="userProfile" />
 
     <v-dialog v-model="dialogOpened" max-width="1150px" class="scroll-v-dialog">
       <v-card>

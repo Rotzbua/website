@@ -7,7 +7,7 @@
           v-if="isGatewayNeeded()"
         />
         <game-mode-select
-          :gameMode="selectedGameMode"
+          :game-mode="selectedGameMode"
           @gameModeChanged="onGameModeChanged"
         ></game-mode-select>
         <v-menu offset-x>
@@ -96,8 +96,8 @@
         <country-rankings-grid
           v-if="!isLoading"
           :rankings="rankings"
-          :ongoingMatches="ongoingMatchesMap"
-          :selectedCountry="selectedCountry.countryCode"
+          :ongoing-matches="ongoingMatchesMap"
+          :selected-country="selectedCountry.countryCode"
         ></country-rankings-grid>
         <div class="text-center my-5">
           <v-progress-circular

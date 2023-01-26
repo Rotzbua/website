@@ -129,7 +129,7 @@
                 >
                   <country-flag-extended
                     class="country-flag"
-                    :countryCode="item.playersInfo[index].countryCode"
+                    :country-code="item.playersInfo[index].countryCode"
                     :location="item.playersInfo[index].location"
                     size="small"
                   />

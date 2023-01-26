@@ -62,7 +62,7 @@
           <player-mmr-rp-timeline-chart
             v-if="!isPlayerMmrRpTimelineEmpty"
             style="position: relative"
-            :mmrRpTimeline="playerMmrRpTimeline"
+            :mmr-rp-timeline="playerMmrRpTimeline"
           />
           <v-card-text v-else>
             {{
@@ -91,8 +91,8 @@
       <v-col cols="md-10">
         <player-hero-statistics
           v-if="selectedSeason.id !== 0"
-          :selectedMap="selectedMap"
-          :playerStatsHeroVersusRaceOnMap="playerStatsHeroVersusRaceOnMap"
+          :selected-map="selectedMap"
+          :player-stats-hero-versus-race-on-map="playerStatsHeroVersusRaceOnMap"
         />
       </v-col>
     </v-row>
@@ -116,8 +116,8 @@
         <player-hero-win-rate
           v-if="selectedSeason.id !== 0"
           :key="updatePlayerHeroStatsKey"
-          :selectedMap="selectedMapHeroWinRate"
-          :playerStatsHeroVersusRaceOnMap="playerStatsHeroVersusRaceOnMap"
+          :selected-map="selectedMapHeroWinRate"
+          :player-stats-hero-versus-race-on-map="playerStatsHeroVersusRaceOnMap"
         />
       </v-col>
     </v-row>

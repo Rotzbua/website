@@ -5,15 +5,15 @@
         v-bind:key="`top-${index}`"
         :index="index - 1"
         :side="'top'"
-        :playerHeight="playerHeight"
-        :verticalSpace="verticalSpace"
+        :player-height="playerHeight"
+        :vertical-space="verticalSpace"
       />
       <tournament-round-connector
         v-bind:key="`bottom-${index}`"
         :index="index - 1"
         :side="'bottom'"
-        :playerHeight="playerHeight"
-        :verticalSpace="verticalSpace"
+        :player-height="playerHeight"
+        :vertical-space="verticalSpace"
       />
     </template>
   </div>

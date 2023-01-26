@@ -23,7 +23,7 @@
       <v-col class="px-0">
         <v-card class="px-1 m-1">
           <node-overrides-card
-            :passedOverrides="initProxySettings.nodeOverrides"
+            :passed-overrides="initProxySettings.nodeOverrides"
           ></node-overrides-card>
         </v-card>
       </v-col>
@@ -32,8 +32,8 @@
       <v-col class="px-0">
         <v-card class="px-1 m-0">
           <node-overrides-card
-            :passedOverrides="initProxySettings.automaticNodeOverrides"
-            :automaticNodes="true"
+            :passed-overrides="initProxySettings.automaticNodeOverrides"
+            :automatic-nodes="true"
           ></node-overrides-card>
         </v-card>
       </v-col>

@@ -52,33 +52,33 @@
                   <td>{{ $t("races." + raceEnums[item.race]) }}</td>
                   <player-stats-race-versus-race-on-map-table-cell
                     :stats="item.winLosses[1]"
-                    :compareRace="item.race"
-                    :winThreshold="0.51"
-                    :lossThreshold="0.49"
+                    :compare-race="item.race"
+                    :win-threshold="0.51"
+                    :loss-threshold="0.49"
                   />
                   <player-stats-race-versus-race-on-map-table-cell
                     :stats="item.winLosses[2]"
-                    :compareRace="item.race"
-                    :winThreshold="0.51"
-                    :lossThreshold="0.49"
+                    :compare-race="item.race"
+                    :win-threshold="0.51"
+                    :loss-threshold="0.49"
                   />
                   <player-stats-race-versus-race-on-map-table-cell
                     :stats="item.winLosses[3]"
-                    :compareRace="item.race"
-                    :winThreshold="0.51"
-                    :lossThreshold="0.49"
+                    :compare-race="item.race"
+                    :win-threshold="0.51"
+                    :loss-threshold="0.49"
                   />
                   <player-stats-race-versus-race-on-map-table-cell
                     :stats="item.winLosses[4]"
-                    :compareRace="item.race"
-                    :winThreshold="0.51"
-                    :lossThreshold="0.49"
+                    :compare-race="item.race"
+                    :win-threshold="0.51"
+                    :loss-threshold="0.49"
                   />
                   <player-stats-race-versus-race-on-map-table-cell
                     :stats="item.winLosses[0]"
-                    :compareRace="item.race"
-                    :winThreshold="0.51"
-                    :lossThreshold="0.49"
+                    :compare-race="item.race"
+                    :win-threshold="0.51"
+                    :loss-threshold="0.49"
                   />
                 </tr>
               </tbody>

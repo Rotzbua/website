@@ -25,13 +25,13 @@
           <v-row>
             <v-col />
             <v-col>
-              <assign-portrait :portraitId="editPortraitId" :selectable="false" />
+              <assign-portrait :portrait-id="editPortraitId" :selectable="false" />
             </v-col>
             <v-col />
           </v-row>
           <v-row class="justify-center">
             <v-card-actions>
-              <portrait-group-combobox @groups-changed="updateGroupModel" :portraitId="editPortraitId" />
+              <portrait-group-combobox @groups-changed="updateGroupModel" :portrait-id="editPortraitId" />
             </v-card-actions>
           </v-row>
           <v-row class="justify-center">

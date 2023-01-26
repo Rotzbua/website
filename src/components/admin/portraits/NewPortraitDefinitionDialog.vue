@@ -34,7 +34,7 @@
 
                 <v-row>
                   <v-container class="ml-3 mr-3">
-                    <portrait-group-combobox :portraitId="portraitId" />
+                    <portrait-group-combobox :portrait-id="portraitId" />
                   </v-container>
                 </v-row>
               </v-container>

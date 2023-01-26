@@ -24,7 +24,7 @@
                     <v-btn x-large color="error w3-race-bg--text" @click="dialog = false">Cancel</v-btn>
                     <v-spacer />
                   </v-card-actions>
-                  <match-detail-view :matchId="matchId"></match-detail-view>
+                  <match-detail-view :match-id="matchId"></match-detail-view>
                 </v-container>
               </v-card>
             </v-dialog>
@@ -33,7 +33,7 @@
         </v-row>
       </v-container>
 
-      <admin-replay-chat-log v-if="acceptedGame" :matchId="matchId"></admin-replay-chat-log>
+      <admin-replay-chat-log v-if="acceptedGame" :match-id="matchId"></admin-replay-chat-log>
     </v-card>
   </v-container>
 </template>

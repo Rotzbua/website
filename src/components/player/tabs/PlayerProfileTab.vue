@@ -15,7 +15,7 @@
               v-for="gameModeStat in topGameModeStats"
               :key="gameModeStat.gameMode"
             >
-              <player-league :modeStat="gameModeStat"></player-league>
+              <player-league :mode-stat="gameModeStat"></player-league>
             </v-col>
           </v-row>
           <v-row v-if="isBetaSeason">

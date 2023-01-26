@@ -6,21 +6,21 @@
         <tournament-round-matches
           :key="`matches-${roundIndex}`"
           :round="round"
-          :roundWidth="roundWidth"
-          :playerHeight="playerHeight"
-          :roundNameHeight="roundNameHeight"
-          :verticalSpace="roundDimensions[roundIndex].verticalSpace"
-          :marginTop="roundDimensions[roundIndex].marginTop"
+          :round-width="roundWidth"
+          :player-height="playerHeight"
+          :round-name-height="roundNameHeight"
+          :vertical-space="roundDimensions[roundIndex].verticalSpace"
+          :margin-top="roundDimensions[roundIndex].marginTop"
         />
         <tournament-round-connectors
           v-if="roundIndex + 1 < rounds.length"
           :key="`connectors-${roundIndex}`"
-          :seriesCount="round.series.length"
-          :connectorWidth="connectorWidth"
-          :playerHeight="playerHeight"
-          :roundNameHeight="roundNameHeight"
-          :verticalSpace="roundDimensions[roundIndex].verticalSpace"
-          :marginTop="roundDimensions[roundIndex].marginTop"
+          :series-count="round.series.length"
+          :connector-width="connectorWidth"
+          :player-height="playerHeight"
+          :round-name-height="roundNameHeight"
+          :vertical-space="roundDimensions[roundIndex].verticalSpace"
+          :margin-top="roundDimensions[roundIndex].marginTop"
         />
       </template>
     </div>

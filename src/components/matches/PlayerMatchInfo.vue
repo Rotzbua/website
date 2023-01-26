@@ -3,7 +3,7 @@
     <player-icon
       v-if="!left"
       :race="race"
-      :rndRace="rndRace"
+      :rnd-race="rndRace"
       :big="bigRaceIcon"
       class="mr-1"
     />
@@ -24,7 +24,7 @@
       </a>
       <div class="flag-container">
         <country-flag-extended
-          :countryCode="player.countryCode"
+          :country-code="player.countryCode"
           :location="player.location"
           size="small"
         />
@@ -33,7 +33,7 @@
     <player-icon
       v-if="left"
       :race="race"
-      :rndRace="rndRace"
+      :rnd-race="rndRace"
       :big="bigRaceIcon"
       class="ml-2"
     />

@@ -50,7 +50,7 @@
               </v-col>
               <v-col cols="1" />
               <div class="subicon">
-                <download-replay-icon :gameId="matchId"/>
+                <download-replay-icon :game-id="matchId"/>
               </div>
             </v-row>
           </v-card-title>

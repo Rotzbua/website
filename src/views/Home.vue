@@ -82,17 +82,17 @@
           <div class="seasonMaps">
             <div>
               <b class="mode">{{ $t("gameModes.GM_1ON1") }}</b>
-              <copy-button :copyText="mapNamesAsString('1vs1')" tooltipText="maptooltip"></copy-button>
+              <copy-button :copy-text="mapNamesAsString('1vs1')" tooltip-text="maptooltip"></copy-button>
               <ul><li v-for="map in maps1v1" :key="map.id">{{ map.name }}</li></ul>
             </div>
             <div>
               <b class="mode">{{ $t("gameModes.GM_2ON2") }}</b>
-              <copy-button :copyText="mapNamesAsString('2vs2')" tooltipText="maptooltip"></copy-button>
+              <copy-button :copy-text="mapNamesAsString('2vs2')" tooltip-text="maptooltip"></copy-button>
               <ul><li v-for="map in maps2v2" :key="map.id">{{ map.name }}</li></ul>
             </div>
             <div>
               <b class="mode">{{ $t("gameModes.GM_4ON4") }}</b>
-              <copy-button :copyText="mapNamesAsString('4vs4')" tooltipText="maptooltip"></copy-button>
+              <copy-button :copy-text="mapNamesAsString('4vs4')" tooltip-text="maptooltip"></copy-button>
               <ul><li v-for="map in maps4v4" :key="map.id">{{ map.name }}</li></ul>
             </div>
           </div>

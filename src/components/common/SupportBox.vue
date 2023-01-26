@@ -39,8 +39,8 @@
       <crypto-dialog
         v-model="cryptoDialogTracker[index]"
         :crypto="crypto.coin"
-        :cryptoName="crypto.name"
-        :cryptoAddress="crypto.address"
+        :crypto-name="crypto.name"
+        :crypto-address="crypto.address"
       ></crypto-dialog>
     </v-card>
 

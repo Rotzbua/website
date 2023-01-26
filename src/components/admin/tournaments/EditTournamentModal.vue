@@ -29,7 +29,7 @@
           <v-datetime-picker
             label="Date / Time (UTC)"
             v-model="startDateTime"
-            :textFieldProps="{ 'single-line': true, 'hide-details': true }"
+            :text-field-props="{ 'single-line': true, 'hide-details': true }"
           />
           <v-select
             v-if="isEdit"

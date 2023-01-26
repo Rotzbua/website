@@ -6,7 +6,7 @@
       v-bind:class="{ mt2: index > 0 }"
     >
       <player-match-info
-        :unfinishedMatch="unfinishedMatch"
+        :unfinished-match="unfinishedMatch"
         :player="team.players[index]"
         :left="left"
         :big-race-icon="bigRaceIcon"

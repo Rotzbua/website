@@ -9,13 +9,13 @@
           <v-card-text>
             <matches-status-select />
             <game-mode-select
-              :disabledModes="disabledGameModes"
-              :gameMode="gameMode"
+              :disabled-modes="disabledGameModes"
+              :game-mode="gameMode"
               @gameModeChanged="gameModeChanged"
             ></game-mode-select>
             <map-select
               @mapChanged="mapChanged"
-              :mapKeys="maps"
+              :map-keys="maps"
               :map="map"
             ></map-select>
             <mmr-select
@@ -26,9 +26,9 @@
           </v-card-text>
           <matches-grid
             v-model="matches"
-            :totalMatches="totalMatches"
+            :total-matches="totalMatches"
             @pageChanged="onPageChanged"
-            :itemsPerPage="50"
+            :items-per-page="50"
             :unfinished="unfinished"
           ></matches-grid>
         </v-card>

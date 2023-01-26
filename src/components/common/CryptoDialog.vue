@@ -11,7 +11,7 @@
 
         <v-row class="mt-2">
           <v-spacer></v-spacer>
-          <copy-button :copyText="cryptoAddress"></copy-button>
+          <copy-button :copy-text="cryptoAddress"></copy-button>
           <v-spacer></v-spacer>
         </v-row>
 

@@ -3,20 +3,20 @@
     <tournament-series-player
       :side="'top'"
       :player="topPlayer"
-      :playerHeight="playerHeight"
-      :seriesCanceled="seriesCanceled"
-      :seriesFinished="seriesFinished"
-      :seriesSpecial="seriesSpecial"
-      :roundWidth="roundWidth"
+      :player-height="playerHeight"
+      :series-canceled="seriesCanceled"
+      :series-finished="seriesFinished"
+      :series-special="seriesSpecial"
+      :round-width="roundWidth"
     />
     <tournament-series-player
       :side="'bottom'"
       :player="bottomPlayer"
-      :playerHeight="playerHeight"
-      :seriesCanceled="seriesCanceled"
-      :seriesFinished="seriesFinished"
-      :seriesSpecial="seriesSpecial"
-      :roundWidth="roundWidth"
+      :player-height="playerHeight"
+      :series-canceled="seriesCanceled"
+      :series-finished="seriesFinished"
+      :series-special="seriesSpecial"
+      :round-width="roundWidth"
     />
   </div>
 </template>

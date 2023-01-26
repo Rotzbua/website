@@ -36,7 +36,7 @@
         <v-col cols="12" md="10">
           <activity-per-day-chart
             style="position: relative"
-            :selectedGameMode="selectedGamesPerDayMode"
+            :selected-game-mode="selectedGamesPerDayMode"
             :game-days="gameDays"
           />
         </v-col>

@@ -7,10 +7,10 @@
       <template v-for="(s, index) in series">
         <tournament-series
           :series="s"
-          :seriesIndex="index"
-          :playerHeight="playerHeight"
-          :verticalSpace="verticalSpace"
-          :roundWidth="roundWidth"
+          :series-index="index"
+          :player-height="playerHeight"
+          :vertical-space="verticalSpace"
+          :round-width="roundWidth"
           v-bind:key="s.id"
         />
       </template>

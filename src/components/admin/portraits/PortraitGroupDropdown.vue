@@ -19,9 +19,9 @@
             <v-row no-gutters justify="start">
               <v-col v-for="portraitId in hoveredGroupPortraits(group)" :key="portraitId" cols="1" md="1">
                 <assign-portrait
-                  :portraitId="portraitId"
-                  :isAssigned="false"
-                  :isInert="true"
+                  :portrait-id="portraitId"
+                  :is-assigned="false"
+                  :is-inert="true"
                   class="pa-1"
                 ></assign-portrait>
               </v-col>

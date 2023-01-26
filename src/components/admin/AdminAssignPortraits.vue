@@ -55,7 +55,7 @@
                           <v-card-actions>
                             <v-row no-gutters>
                               <v-col v-for="portraitId in confirmAddedPortraits" :key="portraitId" cols="1">
-                                <assign-portrait :portraitId="portraitId" class="pa-1"></assign-portrait>
+                                <assign-portrait :portrait-id="portraitId" class="pa-1"></assign-portrait>
                               </v-col>
                             </v-row>
                           </v-card-actions>
@@ -84,7 +84,7 @@
                           <v-card-actions>
                             <v-row no-gutters>
                               <v-col v-for="portraitId in confirmRemovedPortraits" :key="portraitId" cols="1">
-                                <assign-portrait :portraitId="portraitId" class="pa-1"></assign-portrait>
+                                <assign-portrait :portrait-id="portraitId" class="pa-1"></assign-portrait>
                               </v-col>
                             </v-row>
                           </v-card-actions>
@@ -127,8 +127,8 @@
           <v-row v-if="hasSpecialPortraitsAssigned" no-gutters :justify="'start'">
             <v-col align-self="stretch" v-for="portraitId in assignedPortraitsModel" :key="portraitId" cols="2" md="1">
               <assign-portrait
-                :portraitId="portraitId"
-                :isAssigned="true"
+                :portrait-id="portraitId"
+                :is-assigned="true"
                 @portrait-deselected="removeAssignedPortrait"
                 class="pa-1"
               ></assign-portrait>
@@ -146,7 +146,7 @@
 
           <v-row v-if="hasSpecialPortraits" no-gutters :justify="'start'">
             <v-col v-for="portraitId in searchedPlayerPortraits" :key="portraitId" cols="2" md="1">
-              <assign-portrait :portraitId="portraitId" class="pa-1"></assign-portrait>
+              <assign-portrait :portrait-id="portraitId" class="pa-1"></assign-portrait>
             </v-col>
           </v-row>
           <v-row v-else class="ma-2 pa-2">

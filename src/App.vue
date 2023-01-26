@@ -129,7 +129,7 @@
           <v-btn text tile v-on="on" style="margin-top: 2px">
             <locale-icon
               :locale="savedLocale"
-              :showTwoLetterCode="false"
+              :show-two-letter-code="false"
             ></locale-icon>
           </v-btn>
         </template>
