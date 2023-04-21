@@ -5,6 +5,9 @@
         ? require('./../../assets/logos/small-logo-full.png')
         : require('./../../assets/logos/small-logo-full-black.png')
     "
+    width="210"
+    height="40"
+    alt="W3Champions Logo"
   />
 </template>
 
@@ -20,6 +23,8 @@ export default class BrandLogo extends Vue {
 
 <style scoped>
 img {
+  height: auto;
+  width: auto;
   max-height: 100%;
   max-width: 100%;
 }
